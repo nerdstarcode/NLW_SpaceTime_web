@@ -1,12 +1,13 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 
 export interface IAnchorButton{
     href?: string;
     children?: ReactNode
 }
-export function AnchorButton({ href, children }: IAnchorButton) {
+export function AnchorButton({ href = '/', children }: IAnchorButton) {
     return (
-        <a
+        <Link
             href={href}
             className='
                 uppercase 
@@ -22,6 +23,6 @@ export function AnchorButton({ href, children }: IAnchorButton) {
                 hover:bg-green-600
             '>
             {children}
-        </a>
+        </Link>
     )
 }

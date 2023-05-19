@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import nlwLogo from '../../../assets/nlw-spacetime-logo.svg'
-import { AnchorButton } from '@/components/Atoms/AnchorButton'
+import { AnchorButton } from '../../Atoms/AnchorButton'
 
 export function Hero() {
     return (
@@ -13,7 +13,7 @@ export function Hero() {
                 </p>
             </div>
 
-            <AnchorButton href='' children='Cadastrar Lembrança'/>
+            <AnchorButton href='/memories/new' children='Cadastrar Lembrança'/>
 
         </div>
     )

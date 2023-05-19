@@ -6,3 +6,8 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
+
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --font-bai-jamjuree: 'Bai Jamjuree', sans-serif;;
+}
